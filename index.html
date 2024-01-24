@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Okna&Klobásy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Okna & Klobásy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Okna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Klobásy</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="over-text">
+        <h1 class="text-center text-light" style="font-size: 60px;">Okna & Klobásy </h1>
+        <p class="text-center text-light fs-4">Okna plná světla, klobásy plné radosti</p>
+    </div>
+
+    <div class="mobile-header">
+        <h1 class="text-center" style="margin-left: 100px;">Okna & Klobásy</h1>
+        <p class="text-center text-dark fs-4" style="margin-left: 100px;">Okna plná světla, klobásy plné radosti</p>
+    </div>
+
+    <div class="container-fluid carousel-under carousel-fade" style="width: 100vw; padding: 0;">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./bg2.jpg" class="d-block w-100" alt="First Slide">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./bg1.jpg" class="d-block w-100" alt="Second Slide">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center text-dark pobocky-header">Pobočky</h1>
+    <div class="d-flex justify-content-center align-items-center pobocky-cont" style="gap: 50px; margin-left: 100px;">
+        <div class="d-flex   flex-column" style="gap: 10px;">
+            <h2>Praha</h2>
+            <button class="btn" onclick="changeMap(this)">Ječná 511/16, 120 44 Nové Město</button>
+            <button class="btn" onclick="changeMap(this)">Na Bělidle 65/42, 150 00 Praha 5-Smíchov</button>
+            <button class="btn" onclick="changeMap(this)">Karlův most, 110 00 Praha 1</button>
+            <h2>Brno</h2>
+            <button class="btn" onclick="changeMap(this)">Žerotínovo nám. 617/9, 601 77 Brno</button>
+            <button class="btn" onclick="changeMap(this)">Hlinky 50/128, 603 00 Brno-střed</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 id="adresa" class="fs-4">Ječná 511/16, 120 44 Nové Město</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.4440148341337!2d14.423404654460684!3d50.0752721464925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f4aa8361a5%3A0x5c09b2d1df60a4b9!2sPivovarsk%C3%BD%20d%C5%AFm%20Benedict!5e0!3m2!1scs!2scz!4v1706081020522!5m2!1scs!2scz"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+        </div>
+    </div>
+
+
+    <h1 class="text-center text-dark about-header">O nás</h1>
+    <div class="d-flex justify-content-center about-cont">
+        <p class="text-center w-50">V roce 1959 se v malém městečku Oknávíce spojili Ferdinand Skládač a Vlastimil
+            Klobáč a
+            založili společnost "Okna &
+            Klobásy, s.r.o.". Ferdinand se věnoval vývoji inovativních oken, zatímco Vlastimil se specializoval na
+            lahodné klobásy.
+            S časem jejich podnikání rozrostlo, a kombinace kvalitních oken a unikátních klobás jim přinesla úspěch
+            nejen ve městě,
+            ale i na mezinárodní úrovni. Okna & Klobásy se staly symbolem spojení mezi pohodlím domova a gastronomickým
+            potěšením, a
+            dnes firma stále pokračuje pod vedením dalších generací zakladatelů.</p>
+    </div>
+
+
+    <script>
+
+        function changeMap(button) {
+            const mapa = document.getElementById("mapa");
+            const adresa = document.getElementById("adresa");
+            adresa.innerHTML = button.innerHTML;
+
+            switch (button.innerHTML) {
+                case 'Ječná 511/16, 120 44 Nové Město':
+                    mapa.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.4440148341337!2d14.423404654460684!3d50.0752721464925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f4aa8361a5%3A0x5c09b2d1df60a4b9!2sPivovarsk%C3%BD%20d%C5%AFm%20Benedict!5e0!3m2!1scs!2scz!4v1706081020522!5m2!1scs!2scz'
+
+                    break;
+                case 'Na Bělidle 65/42, 150 00 Praha 5-Smíchov': mapa.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.2344837700125!2d14.403864742501366!3d50.071168355566705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9457c58b20ad%3A0xc073bbc900b4a454!2sPizzeria%20Ristorante%20Corleone!5e0!3m2!1scs!2scz!4v1706081482559!5m2!1scs!2scz'
+                    break;
+
+                case 'Karlův most, 110 00 Praha 1':
+                    mapa.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30235.075070893246!2d14.397032573535075!3d50.07496604022848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e5e58eb59f%3A0x75209738d1d3b126!2sKarl%C5%AFv%20most!5e0!3m2!1scs!2scz!4v1706081522446!5m2!1scs!2scz'
+                    break;
+
+                case 'Žerotínovo nám. 617/9, 601 77 Brno':
+                    mapa.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15208.284955714133!2d16.58939763376397!3d49.192736581100654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471295c71020c539%3A0xfdfb0b020e7a4c70!2sMasarykova%20univerzita!5e0!3m2!1scs!2scz!4v1706081581800!5m2!1scs!2scz'
+                    break;
+                case 'Hlinky 50/128, 603 00 Brno-střed':
+                    mapa.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15208.284955714133!2d16.58939763376397!3d49.192736581100654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129434a4843611%3A0x2366d6ae2d44889c!2sPenzion%20Integrity!5e0!3m2!1scs!2scz!4v1706081613560!5m2!1scs!2scz'
+                    break;
+
+            }
+
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
